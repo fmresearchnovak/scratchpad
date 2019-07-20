@@ -1,0 +1,7 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: scratchpad
+Upstream-Contact: Ed Novak, <enovak@fandm.edu>
+
+Files: *
+Copyright: 2019, Ed Novak, <enovak@fandm.edu>
+License: GPL-3

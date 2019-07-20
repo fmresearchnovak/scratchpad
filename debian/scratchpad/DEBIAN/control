@@ -1,0 +1,11 @@
+Package: scratchpad
+Version: 1.0
+Architecture: all
+Maintainer: Ed Novak, <enovak@fandm.edu>
+Installed-Size: 19
+Depends: python, python3, python3-tk
+Section: python
+Priority: optional
+Homepage: github.com/fmresearchnovak/scratchpad
+Description: Notepad and calculator combined!
+  This is a program that combines a basic text / memo pad with some calculator functions.  It is somewhat similar to https://soulver.app/
