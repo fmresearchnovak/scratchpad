@@ -39,9 +39,7 @@ class Pad():
 
 		self.text_ed.bind("<<Modified>>", self.onModified)
 
-
 		tkinter.mainloop()
-
 
 
 	def onModified(self, event):
@@ -89,5 +87,6 @@ class Pad():
 
 
 
-p = Pad()
+if __name__ == "__main__":
+	p = Pad()
 

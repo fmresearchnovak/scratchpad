@@ -1,8 +1,8 @@
 Package: scratchpad
-Version: 1.0
+Version: 1.1
 Architecture: all
 Maintainer: Ed Novak, <enovak@fandm.edu>
-Installed-Size: 19
+Installed-Size: 12
 Depends: python, python3, python3-tk
 Section: python
 Priority: optional

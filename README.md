@@ -20,11 +20,11 @@ Scratchpad can be used for notetaking and will automatically perform in-line mat
 #### Using this github repo / source code
 Just download (clone or otherwise) everything here and run
 
-`python3 scratchpad`
+`python3 scratchpad.py`
 
 \-_or_\-
 
-`./scratchpad`
+`./scratchpad.py`
 
 
 #### Using PyPi package repo
@@ -34,20 +34,37 @@ Just download (clone or otherwise) everything here and run
 `python3 -m scratchpad`
 
 
+
 #### Generate a .deb and install that
+(_still waiting to get package listed in Ubuntu_)
 
-_Still waiting to get package listed in Ubuntu_
-
-`git clone https://github.com/fmresearchnovak/scratchpad`
-
-`cd scratchpad`
+`cd scratchpad/debian-packaging/`
 
 `debuild --no-tgz-check`
 
 `cd ../`
 
-`sudo dpkg -i scratchpad_1.0_all.deb`
+`sudo dpkg -i scratchpad_1.1_all.deb`
 
 _then to run_
 
 `scratchpad`
+
+
+#### Generate a pypi package and install that
+
+`cd scratchpad/pypi-packaging`
+
+`python3 setup.py sdist bdist_wheel`
+
+`pip3 install dist/*`
+
+_then to run_
+
+`python3 -m scratchpad`
+
+[//]: # The tool chain you need is pip3 install twine, setuptools, wheel, mkpkg
+[//]: # To check for mistakes in package use:  python3 -m twine check dist/*
+[//]: # To install it locally  (without pypi):  pip3 install dist/*
+[//]: # To upload it:  python3 -m twine upload dist/*
+[//]: # This might prove useful:  python3 -m mkpkg --cli scratchpad.py scratchpad
