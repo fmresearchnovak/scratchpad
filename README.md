@@ -44,7 +44,7 @@ Just download (clone or otherwise) everything here and run
 
 `cd ../`
 
-`sudo dpkg -i scratchpad_1.1_all.deb`
+`sudo dpkg -i scratchpad_1.1.0_all.deb`
 
 _then to run_
 
@@ -68,3 +68,4 @@ _then to run_
 [//]: # To install it locally  (without pypi):  pip3 install dist/*
 [//]: # To upload it:  python3 -m twine upload dist/*
 [//]: # This might prove useful:  python3 -m mkpkg --cli scratchpad.py scratchpad
+

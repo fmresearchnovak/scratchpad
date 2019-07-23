@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name = "scratchpad-deadmund",
-	version = "1.1",
+	version = "1.1.0",
 	author = "Ed Novak",
 	author_email="enovak@fandm.edu",
 	description = "Notepad with basic math functions",
