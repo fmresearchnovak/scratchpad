@@ -3,17 +3,17 @@ Basic notepad app with some built in calculator functions written in python usin
 
 Scratchpad can be used for notetaking and will automatically perform in-line math while you type.  For those interested, it basically finds any mathematical looking questions and throws them into python.
 
-![Alt](./Screenshot.png "Screenshot1")  
+![Screenshot of scratchpad adding some numbers](./Screenshot.png "Screenshot1")  
 
 ### Supported Operations
 
-* &nbsp;&nbsp; \+ &nbsp;&nbsp;&nbsp;&nbsp;(_addition_)
-* &nbsp;&nbsp; \- &nbsp;&nbsp;&nbsp;&nbsp; (_subtract_)
-* &nbsp;&nbsp; / &nbsp;&nbsp;&nbsp;&nbsp; (_divide_)
-* &nbsp;&nbsp; \* &nbsp;&nbsp;&nbsp;&nbsp; (_multiply_)
-* &nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp; (_exponent_)
-* &nbsp;&nbsp; () &nbsp;&nbsp;&nbsp;&nbsp; (_order of operations enforced by parenthesis_)
-* &nbsp;&nbsp; == &nbsp;&nbsp;&nbsp;&nbsp; (_comparison, as in 6 == 2 * 3 => true_)
+* &nbsp;&nbsp; \+ &nbsp;&nbsp;&nbsp;&nbsp;( _addition_ )
+* &nbsp;&nbsp; \- &nbsp;&nbsp;&nbsp;&nbsp; ( _subtract_ )
+* &nbsp;&nbsp; / &nbsp;&nbsp;&nbsp;&nbsp; ( _divide_ )
+* &nbsp;&nbsp; \* &nbsp;&nbsp;&nbsp;&nbsp; ( _multiply_ )
+* &nbsp;&nbsp; ** &nbsp;&nbsp;&nbsp;&nbsp; ( _exponent_ )
+* &nbsp;&nbsp; () &nbsp;&nbsp;&nbsp;&nbsp; ( _order of operations enforced by parenthesis_ )
+* &nbsp;&nbsp; == &nbsp;&nbsp;&nbsp;&nbsp; ( _comparison, as in 6 == 2 * 3 => true_ )
 
 
 ### How to install / run
@@ -22,7 +22,7 @@ Just download (clone or otherwise) everything here and run
 
 `python3 scratchpad.py`
 
-\-_or_\-
+\- _or_ \-
 
 `./scratchpad.py`
 
@@ -34,9 +34,16 @@ Just download (clone or otherwise) everything here and run
 `python3 -m scratchpad`
 
 
+#### Use the provided Makefile to install
+( _macOS and linux only_ )
+
+`sudo make install`
+
+There is no compiled code (it's python!) so this is the only `Make` directive.
+
 
 #### Generate a .deb and install that
-(_still waiting to get package listed in Ubuntu_)
+( _still waiting to get package listed in Ubuntu_ )
 
 `cd scratchpad/debian-packaging/`
 
@@ -63,6 +70,8 @@ _then to run_
 
 `python3 -m scratchpad`
 
+
+###### The following should be comments.  Let me know if there is a way to make comments in markdown!
 [//]: # The tool chain you need is pip3 install twine, setuptools, wheel, mkpkg
 [//]: # To check for mistakes in package use:  python3 -m twine check dist/*
 [//]: # To install it locally  (without pypi):  pip3 install dist/*
