@@ -79,6 +79,11 @@ class Pad():
 				print("\tfailed to evaluate!")
 				self.text_out.insert(tkinter.INSERT, "\n")
 
+			except TypeError as te:
+				print("\t" + str(te))
+				print("\tfailed to evaluate!")
+				self.text_out.insert(tkinter.INSERT, "\n")
+
 
 		self.text_out.config(state=tkinter.DISABLED)
 		self.resetting_modified_flag = True
